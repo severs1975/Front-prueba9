@@ -1,0 +1,20 @@
+.empty-card-cat {
+    background-color: white;
+}
+
+.colCat {
+    background-color: #f6e8ed;
+
+}
+
+.categorias h2,h3{
+
+    padding: 12px 0;
+
+}
+
+.categorias-div{
+        display: flex;
+        flex-direction: column;
+}
+      

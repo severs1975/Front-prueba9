@@ -1,0 +1,21 @@
+.product-grid  { 
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de ancho igual */
+    grid-gap: 20px; /* Espacio entre las tarjetas */
+  }
+
+.productList-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.productList-div h2{
+  padding: 20px 0px 0px 0px;
+
+}
+
+.productListDiv{
+ padding: 10px 1px 1px 1px;
+  background-color: white;
+}

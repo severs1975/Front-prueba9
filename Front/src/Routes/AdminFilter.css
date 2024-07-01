@@ -1,0 +1,114 @@
+
+  
+  .filters {
+    color: bisque;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid purple;
+  }
+  
+  .filters select,
+  .filters input {
+    width: 18%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    color: purple;
+    background-color:#f6f8ed;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+
+  
+  table {
+    background-color: aqua;
+    width: 99%;
+    border-collapse: collapse;
+    margin: 5px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+  }
+
+  table button {
+    background-color: #161615; /* Azul */
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+  }
+  
+  table th {
+    background-color: #f6f8ed;
+    color: purple;
+  }
+  
+  table tbody tr {
+    background-color: #f2f2f2;
+  }
+
+  table tbody tr td button{
+    margin: 2px 10px;
+    filter: invert(100%);
+    object-fit: cover; 
+  }
+  
+  .modal {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    height: 95%;
+    width: 95%;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .modal-content button:hover {
+    background-color: darkblue;
+  }
+
+  .tablaFilter{
+    color:purple;
+
+  }
+  
+
+  .optionFilter{
+    background-color: aliceblue;
+
+  }
+
+  .tableAction{
+    justify-content: space-between;
+  }

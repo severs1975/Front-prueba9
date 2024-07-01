@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal del filtro de usuario
+.user-filter-container {
+    padding: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}*/
+
+/* Título de la página */
+.title-container {
+    text-align: center;
+    color: yellow;
+    margin-bottom: 20px;
+    border-bottom: solid 3px gray;
+}
+
+/* Cuadrícula de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Define seis columnas de igual ancho */
+    gap: 0px; /* Espacio entre los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    color: black;
+    align-items: flex-start;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total */
+}
+
+.products-grid > div {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total */
+}
+
+/* Tarjeta de producto individual */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card-content {
+    padding: 15px;
+}
+
+.product-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.product-card-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.product-card-price {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Botones de paginación */
+.pagination {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+}
+
+.pagination button {
+    background-color: yellowgreen;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+    background-color: yellow;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,89 @@
+.buscador-container { 
+    display: flex; /* Utiliza flexbox para el diseño del contenedor */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+}
+
+.buscador-container h2 {
+    margin-bottom: 0px; /* Establece el margen inferior a 0 para el título */
+}
+
+.buscador-container p {
+    margin-bottom: 2px; /* Establece un pequeño margen inferior para el párrafo */
+}
+
+.form-buscador {
+    width: 100%; /* El formulario toma el 100% del ancho disponible */
+    max-width: 900px; /* El ancho máximo del formulario es de 900px */
+    display: flex; /* Utiliza flexbox para el diseño del formulario */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+}
+
+.buscador-inputs {
+    display: flex; /* Utiliza flexbox para el diseño del contenedor de inputs */
+    flex-direction: row; /* Coloca los elementos en una fila */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    gap: 10px; /* Espacio de 10px entre los elementos */
+    width: 100%; /* El contenedor de inputs toma el 100% del ancho disponible */
+}
+
+.buscador-inputs input[type="text"],
+.buscador-inputs input[readOnly] {
+    flex: 1; /* Los inputs toman el mismo espacio disponible */
+    padding: 8px; /* Relleno interno de 8px */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+}
+
+.buscador-inputs input.input-fechas {
+    flex: 2; /* El input de fechas toma el doble de espacio que los otros inputs */
+}
+
+.buscador-inputs button {
+    padding: 8px 16px; /* Relleno interno de 8px vertical y 16px horizontal */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados con un radio de 6px */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+}
+
+
+.buscador-inputs {
+    /* Estilos para el contenedor de los inputs y botones */
+    display: flex; /* Utiliza flexbox para el diseño del contenedor */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    gap: 10px; /* Espacio de 10px entre los elementos */
+}
+
+/* Estilo del calendario */
+.calendarElement {
+    z-index: 999; /* Z-index para superposición */
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #6b6969; /* Borde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 20px; /* Bordes redondeados */
+    color: #000; /* Letras y números en negro */
+}
+
+/* Estilo para los días seleccionados */
+.rdrDayNumber span,
+.rdrDaySelected span {
+    color: #000 !important; /* Texto en negro */
+}
+
+/* Otros estilos que consideres necesarios para la apariencia */
+.rdrCalendarWrapper {
+    color: #000; /* Texto en negro */
+}
+
+.rdrMonthAndYearPickers select,
+.rdrMonthAndYearPickers select option {
+    color: #000; /* Texto en negro */
+    background-color: #fff; /* Fondo blanco */
+}
+
+.rdrMonthAndYearPickers select:hover,
+.rdrMonthAndYearPickers select:focus {
+    background-color: #FFD700; /* Fondo amarillo al pasar el ratón o al enfocar */
+    color: #000; /* Texto en negro */
+}

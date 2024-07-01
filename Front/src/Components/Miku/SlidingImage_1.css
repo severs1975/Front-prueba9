@@ -1,0 +1,31 @@
+/* App.css */
+.sliding_1Image-container {
+    overflow: hidden;
+    display: flex;
+    align-items:;
+  }
+  
+  .sliding_1Image-container img {
+    display: block;
+    max-width: 50%;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .sliding_1Image-container.slide-in img {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  @media (max-width: 750px) {
+  
+    .sliding_1Image-container.slide-in img{
+      display: none;
+    }
+
+  }
+  
+  
+
+

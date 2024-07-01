@@ -1,0 +1,99 @@
+.adm-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  min-height: 70vh;
+  width: 100%;
+}
+
+.adm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin-right: 20px; 
+  margin-bottom: 200px;
+  width: 30%;
+}
+
+.adm-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  flex-grow: 1;
+}
+
+.adm button {
+  height: 40px;
+  width: 200px;
+  background-color: #774c81;
+  color: #f8c458;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.adm button:hover {
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.1);
+}
+
+.adm-search {
+  color: #774c81;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.adm-search input {
+  background-color: #f6e8ed;
+  color: #774c81;
+  width: 400px;
+  height: 35px;
+  border-radius: 25px;
+  padding-left: 10px;
+}
+
+.adm-search ::placeholder {
+  color: #774c81;
+}
+
+.adm-mobile-message {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .adm-search,
+  .adm-container {
+    display: none;
+  }
+
+  .adm-mobile-message {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #f8c458;
+    background-color: #774c81;
+    border: 1px solid #f8c458;
+    border-radius: 4px;
+  }
+}
+
+.listado {
+  color: black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listado th,
+.listado td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sec-listado{
+width: 70%;
+}

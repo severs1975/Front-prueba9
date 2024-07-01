@@ -1,0 +1,61 @@
+.Detail {
+    height: 100%;
+    width: 100vp;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    background-color: white;
+    color: black;
+  }
+  
+  .Detail-imgContent {
+    width: 25vw;
+    height: 60vh; /* Altura del 80% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid 1px white;
+  }
+  
+  .Detail-imgContent img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .Detail-textContent {
+    width: 15vw;
+    height: 60vh; /* Altura del 80% del viewport */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid 1px white ;
+  }
+  
+  .Detail-textContent a {
+    color: white;
+  }
+
+  .Detail-textContent p {
+    text-align: left;
+  }
+
+  .Detail-calendar {
+    float: right; /* Alinea el calendario a la derecha */
+    margin-left: 20px; /* Añade un margen izquierdo para separar el calendario del contenido */
+  }
+
+  .Reserva-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto !important;;
+  }
+
+  .Reserva-button:hover {
+    background-color: yellowgreen;
+  }

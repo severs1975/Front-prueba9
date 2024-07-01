@@ -1,0 +1,134 @@
+.login-wrapper {
+  background-image: url('../Components/AnimationComponent/ThorFondo.jpg'),
+    url('../Components/AnimationComponent/ThorFondo_.jpg'),
+    url('../Components/AnimationComponent/ThorFondo_r.jpg'),;
+  min-height: 71vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6E8ED;
+  background-size: cover;
+  background-position: center;
+  animation: cambiarFondo 2s linear infinite alternate;
+  }
+
+  @keyframes cambiarFondo {
+    0% {
+      background-image: url('../Components/AnimationComponent/ThorFondo.jpg');
+    }
+    15% {
+      background-image: url('../Components/AnimationComponent/ThorFondo_.jpg');
+    }
+    
+    100% {
+      background-image: url('../Components/AnimationComponent/ThorFondo_r.jpg');
+    }
+  }
+
+  .loginAnimation div img{
+    height: 50vh;
+  }
+
+  .login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  background-color: rgba(45, 45, 45);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .login-title {
+  text-align: center;
+  color: rgba(255, 204, 0);
+  margin-bottom: 20px;
+  }
+  .login-form {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    }
+
+  .form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ccc;
+  }
+  .form-input::placeholder {
+  color: #ccc;
+  }
+  .form-input:focus {
+  outline: none;
+  border-color: #774c81;
+  }
+  .login-button {
+  padding: 10px;
+  background-color: rgba(255, 204, 0);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  .login-button:hover {
+  background-color: gray;
+  }
+  .checkbox-group {
+  margin-bottom: 20px;
+  }
+.checkbox-label {
+display: flex;
+align-items: center;
+color: #fff;
+font-size: 14px;
+margin-right: auto;
+}
+
+  .checkbox-input {
+  margin-right: 8px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  }
+  .checkbox-input:checked {
+  background-color: rgba(255, 204, 0);
+  border-color: #f8c458;
+  }
+  .checkbox-input:checked::before {
+  content: '✓';
+  display: block;
+  text-align: center;
+  color: #774c81;
+  font-size: 12px;
+  line-height: 16px;
+  }
+  .forgot-password-label {
+    margin-left: auto;
+  }
+
+  .forgot-password-link {
+      color: rgba(255, 204, 0);
+      text-decoration: none;
+  }
+
+  .register-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  }
+  .register-link-text {
+  color: rgba(255, 204, 0);
+  text-decoration: none;
+  }
+

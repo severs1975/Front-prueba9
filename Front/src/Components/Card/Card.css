@@ -1,0 +1,74 @@
+.card {
+  height: 90%;
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.card img {
+  width: 90%;
+  height: 200px; 
+  object-fit: contain; 
+}
+
+.imageContent{
+  align-items: center;
+  width: 200px;
+  background-color: white;
+}
+
+.card-content {
+  flex-direction: column;
+  width: 200px;
+  padding: 16px;
+  align-items: center;
+}
+
+.card-content h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.card-content p {
+  margin-bottom: 8px;
+  width: 160px;
+
+}
+
+.detail-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: rgba(45, 45, 45);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px; /* Ajusta el valor según sea necesario */
+  cursor: pointer;
+  width: 80px;
+}
+
+.detail-button:hover {
+  background-color: gray; /* Cambia el color al pasar el ratón sobre el botón */
+}

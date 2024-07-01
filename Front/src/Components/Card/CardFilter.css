@@ -1,0 +1,33 @@
+.filter_card {
+    height: 90%;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+/* Estilos específicos para la tarjeta con filtro */
+.filter_card-filter {
+    color: black;
+    font-size: 14px; /* Ajusta el tamaño de la letra para toda la tarjeta */
+    display: flex;
+    flex-direction: column;
+    width: 202px; /* Ajusta el tamaño según sea necesario */
+    height: 300px; /* Establece una altura fija o mínima para todas las tarjetas */
+  }
+  
+  /* Estilos para el contenido de la imagen */
+  .filter_imageContent {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter_imageContent img {
+    max-width: 100%;
+    border-radius: 8px;
+  }

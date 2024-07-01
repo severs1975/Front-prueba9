@@ -1,0 +1,60 @@
+.calendario {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.dias-semana, .dias-mes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dia-semana, .dia-mes {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.dia-semana {
+  font-weight: bold;
+  color: #555;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #ddd;
+}
+
+.dia-mes {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* indica que es interactivo*/
+}
+
+.dia-mes:hover {
+  background-color: #f0f0f0;
+}
+
+.dia-mes.seleccionado {
+  background-color: #3b24d1;
+  color: white;
+  border-color: #3b24d1;
+}
+
+.dia-mes.inactivo {
+  color: #ccc; /* Días no pertenecientes al mes actual */
+}
+
+
+
+.rango-fecha {
+  background-color: #ffeb3b; /* Puedes ajustar este color según tu preferencia */
+  color: #000;
+}

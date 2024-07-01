@@ -1,0 +1,55 @@
+.card {
+    height: 90%;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para la tarjeta con filtro */
+.card-filter {
+    color: black;
+    font-size: 14px; /* Ajusta el tamaño de la letra para toda la tarjeta */
+    display: flex;
+    flex-direction: column;
+    width: 202px; /* Ajusta el tamaño según sea necesario */
+    height: 300px; /* Establece una altura fija o mínima para todas las tarjetas */
+    position: relative; /* Necesario para posicionar el botón de detalle */
+}
+
+/* Estilos para el contenido de la imagen */
+.imageContent {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.imageContent img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.detail-button {
+    display: none; /* Oculta el botón por defecto */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px; /* Añadido para un diseño más atractivo */
+}
+
+.card-filter:hover .detail-button {
+    display: block; /* Muestra el botón al pasar el cursor */
+}
+
+.detail-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+}
